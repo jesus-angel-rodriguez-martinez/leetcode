@@ -25,6 +25,10 @@ function deleteMiddle(head: ListNode | null): ListNode | null {
     fast = fast.next.next;
   }
 
+  if (!previous) {
+    return null;
+  }
+
   previous.next = slow.next;
 
   return head;
