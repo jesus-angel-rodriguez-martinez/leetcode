@@ -16,6 +16,8 @@ FROM
     SalesPerson AS s
 WHERE
     s.sales_id NOT IN (
-        SELECT sales_id
-        FROM sales_from_red
+        SELECT
+            sfr.sales_id
+        FROM
+            sales_from_red AS sfr
     );
