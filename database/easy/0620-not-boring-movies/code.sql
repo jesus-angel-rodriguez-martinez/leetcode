@@ -10,4 +10,4 @@ WHERE
 AND
     c.description <> 'boring'
 ORDER BY
-    c.id DESC;
+    c.rating DESC;
