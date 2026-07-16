@@ -5,7 +5,7 @@ FROM
     Activity AS a
 WHERE
     a.activity_date BETWEEN
-        DATE '2019-07-27' - 30
+        DATE '2019-07-27' - 29
     AND
         DATE '2019-07-27'
 GROUP BY
