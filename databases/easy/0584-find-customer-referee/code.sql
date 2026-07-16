@@ -1,6 +1,7 @@
 SELECT
     c.name
-FROM Customer AS c
+FROM
+    Customer AS c
 WHERE
     referee_id IS NULL
 OR

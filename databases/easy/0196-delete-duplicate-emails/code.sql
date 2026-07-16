@@ -6,5 +6,6 @@ WHERE
             MIN(pp.id)
         FROM
             Person AS pp
-        GROUP BY pp.email
+        GROUP BY
+            pp.email
     );

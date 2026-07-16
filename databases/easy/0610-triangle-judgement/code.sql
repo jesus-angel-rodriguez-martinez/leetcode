@@ -2,7 +2,7 @@ SELECT
     t.x,
     t.y,
     t.z,
-    CASE 
+    CASE
         WHEN
             t.x + t.y > t.z
         AND

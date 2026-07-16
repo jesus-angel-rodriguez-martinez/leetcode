@@ -5,6 +5,6 @@ FROM
 LEFT JOIN
     Orders AS o
 ON
-    c.id = o.customerId 
+    c.id = o.customerId
 WHERE
     o.customerId IS NULL;

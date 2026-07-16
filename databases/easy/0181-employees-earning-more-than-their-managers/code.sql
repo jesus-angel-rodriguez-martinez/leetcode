@@ -1,7 +1,7 @@
 SELECT
     e.name AS Employee
 FROM
-    Employee as e
+    Employee AS e
 JOIN
     Employee AS m
 ON
