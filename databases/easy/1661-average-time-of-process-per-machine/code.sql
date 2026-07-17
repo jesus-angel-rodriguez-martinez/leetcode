@@ -1,6 +1,10 @@
 SELECT
     a1.machine_id AS machine_id,
-    AVG(a2.timestamp - a1.timestamp) AS processing_time
+    ROUND(
+        AVG(
+            a2.timestamp - a1.timestamp
+        )::numeric
+    , 3) AS processing_time
 FROM
     Activity AS a1
 INNER JOIN
