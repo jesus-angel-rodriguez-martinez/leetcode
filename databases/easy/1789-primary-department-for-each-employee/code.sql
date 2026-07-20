@@ -1,6 +1,6 @@
 SELECT
-    e.employee_id,
-    e.department_id
+    e.employee_id AS employee_id,
+    e.department_id AS department_id
 FROM
     Employee AS e
 GROUP BY
@@ -9,8 +9,8 @@ HAVING
     COUNT(*) = 1
 UNION
 SELECT
-    e.employee_id,
-    e.department_id
+    e.employee_id AS employee_id,
+    e.department_id AS department_id
 FROM
     Employee AS e
 WHERE
