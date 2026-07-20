@@ -1,9 +1,9 @@
 SELECT
-    lb.book_id,
-    lb.title,
-    lb.author,
-    lb.genre,
-    lb.publication_year,
+    lb.book_id AS book_id,
+    lb.title AS title,
+    lb.author AS author,
+    lb.genre AS genre,
+    lb.publication_year AS publication_year,
     COUNT(
         CASE 
             WHEN
@@ -13,7 +13,7 @@ SELECT
     ) AS current_borrowers
 FROM
     library_books AS lb
-LEFT JOIN
+INNER JOIN
     borrowing_records AS br
 ON
     lb.book_id = br.book_id
