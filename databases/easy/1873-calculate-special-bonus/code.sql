@@ -9,4 +9,6 @@ SELECT
         ELSE 0
     END AS bonus
 FROM
-    Employees AS e;
+    Employees AS e
+ORDER BY
+    e.employee_id ASC;
