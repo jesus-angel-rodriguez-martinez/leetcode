@@ -9,4 +9,8 @@ ON
 WHERE
     m.employee_id IS NULL
 AND
-    E.SALARY < 30000;
+    e.manager_ID IS NOT NULL
+AND
+    e.salary < 30000
+ORDER BY
+    e.employee_id ASC;
